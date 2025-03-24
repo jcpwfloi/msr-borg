@@ -1,0 +1,14 @@
+build/
+.cache/
+.vscode/
+compile_commands.json
+*.pdf
+__pycache__/
+runs/data/
+runs/slurm-*.out
+runs/start.sh
+slurm/
+temp/
+slurm-*.out
+.venv/
+test.ipynb

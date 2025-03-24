@@ -1,0 +1,18 @@
+add_executable(${CMAKE_PROJECT_NAME} main.cpp)
+add_executable(maxweight maxweight.cpp)
+add_executable(ctmc ctmc.cpp)
+add_executable(rtimer rtimer.cpp)
+add_executable(fcfs fcfs.cpp)
+add_executable(first-fit first-fit.cpp)
+add_executable(serverfilling serverfilling.cpp)
+add_executable(borg borg.cpp)
+add_executable(borg-msr borg-msr.cpp)
+add_executable(borg-nmsr borg-nmsr.cpp)
+add_executable(borg-nmsr-no-ff borg-nmsr-no-ff.cpp)
+add_executable(borg-msr-no-ff borg-msr-no-ff.cpp)
+add_executable(borg-rt borg-rt.cpp)
+add_executable(borg-maxweight borg-maxweight.cpp)
+target_link_libraries(borg-maxweight optimized ${GUROBI_CXX_LIBRARY}
+debug ${GUROBI_CXX_DEBUG_LIBRARY})
+target_link_libraries(borg-maxweight ${GUROBI_LIBRARY})
+
