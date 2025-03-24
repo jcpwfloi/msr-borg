@@ -84,6 +84,6 @@ fig['data'] = (fig['data'][0], fig['data'][4], fig['data'][5], fig['data'][2], f
 
 fig.update_layout(margin=dict(l=0, r=0, t=0, b=0))
 
-fig.write_image("../borg.pdf")
+fig.write_image("../borg.png")
 time.sleep(1)
-fig.write_image("../borg.pdf")
+fig.write_image("../borg.png")

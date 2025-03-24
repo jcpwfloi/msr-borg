@@ -3,7 +3,9 @@
 This code produces Figure 4 in the paper "Improving Multiresource Job Scheduling with Markovian
 Service Rate Policies".
 
-If you do not wish to run the code yourself, the outputs of the simulation are saved under `borg/*.npy`. With the .npy files, you can simply run `python3 borg/plot-all.py`, which generates Figure 4 --- `borg.pdf` under the project directory.
+![Figure 4](./borg.png)
+
+If you do not wish to run the code yourself, the outputs of the simulation are saved under `borg/*.npy`. With the .npy files, you can simply run `python3 borg/plot-all.py`, which generates Figure 4 --- `borg.png` under the project directory.
 
 # Prerequisites
 ## Gurobi C++ and Python Library Installation
