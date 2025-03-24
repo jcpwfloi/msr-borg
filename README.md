@@ -12,12 +12,13 @@ If you do not wish to run the code yourself, the outputs of the simulation are s
 Be sure to set environment `GUROBI_HOME` before compiling the code.
 
 # Usage
-## How do a construct an MSR policy?
+## How do I construct an MSR policy?
 
 The `get_candidates(C, D, lmb)` function in `maxmin.py` takes 3 parameters:
 * C: the capacity vector 1xR
 * D: the demand vector KxR
 * lmb: the arrival rate vector 1xK
+
 where K is the number of job types and R is the number of resources.
 
 If the optimization problem is feasible, it will return the `alpha, candidates`, where alpha is the fraction of time we are spending in each candidate and candidates being the candidate set defined in the paper.
